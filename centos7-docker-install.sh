@@ -173,7 +173,8 @@ EOF
     firewall-cmd --reload
 
     # 安装Docker
-    curl https://releases.rancher.com/install-docker/17.03.sh | sh
+    #curl https://releases.rancher.com/install-docker/17.03.sh | sh
+    curl https://github.com/alpar/install-docker/raw/master/17.03.sh | sh
     
     sudo mkdir -p /etc/docker
     sudo tee /etc/docker/daemon.json <<-'EOF'
